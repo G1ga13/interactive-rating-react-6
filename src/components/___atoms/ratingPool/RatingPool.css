@@ -1,0 +1,6 @@
+.rating_pool {
+  display: flex;
+  max-width: 341px;
+  width: 100%;
+  justify-content: space-between;
+}

@@ -1,0 +1,30 @@
+.rating_circle {
+  max-width: 51px;
+  width: 100%;
+  height: 51px;
+  border-radius: 100px;
+  background-color: rgba(38, 46, 56, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(124, 135, 152, 1);
+  border: none;
+  font-family: "Overpass";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.rating_circle:hover {
+  cursor: pointer;
+  background-color: rgba(124, 135, 152, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.rating_circle:active {
+  background-color: rgba(252, 118, 20, 1);
+  color: rgba(255, 255, 255, 1);
+}
