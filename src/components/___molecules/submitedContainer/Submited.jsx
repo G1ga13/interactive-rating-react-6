@@ -1,6 +1,6 @@
 import "./Submited.css";
 import Payment from "../../../assets/images/OnlinePayment.png";
-import SelectedText from "../../___atoms/selectedNumber/selectedText";
+import SelectedText from "../../___atoms/selectedNumber/SelectedText.jsx";
 import Final from "../../___atoms/finalText/FinalText";
 
 function Submited({ selected }) {
