@@ -12,11 +12,3 @@ body {
   height: 100vh;
   background-color: rgba(19, 21, 24, 1);
 }
-
-.first_container {
-  display: none;
-}
-
-.second_container {
-  /* display: none; */
-}

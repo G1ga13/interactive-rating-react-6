@@ -3,11 +3,11 @@ import Payment from "../../../assets/images/OnlinePayment.png";
 import SelectedText from "../../___atoms/selectedNumber/selectedText";
 import Final from "../../___atoms/finalText/FinalText";
 
-function Submited() {
+function Submited({ selected }) {
   return (
     <div className="sub_container">
       <img src={Payment} alt="" />
-      <SelectedText />
+      <SelectedText selected={selected} />
       <Final />
     </div>
   );

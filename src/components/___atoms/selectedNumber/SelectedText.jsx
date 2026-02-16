@@ -1,9 +1,9 @@
 import "./SelectedText.css";
 
-function SelectedText() {
+function SelectedText({ selected }) {
   return (
     <div className="selectedText">
-      <p>You selected 4 out of 5</p>
+      <p>You selected {selected} out of 5</p>
     </div>
   );
 }

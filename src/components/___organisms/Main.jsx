@@ -1,16 +1,34 @@
 import "./Main.css";
 import RatingBox from "../___molecules/RatingContainer/RatingContainer";
 import Submited from "../___molecules/submitedContainer/Submited";
+import { useState } from "react";
 
 function Main() {
+  const [selected, setSelected] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
+
+  function handleSubmit() {
+    if (selected === null) return;
+    setSubmitted(true);
+  }
+
   return (
     <>
-      <div className="first_container">
-        <RatingBox />
-      </div>
-      <div className="second_container">
-        <Submited />
-      </div>
+      {!submitted && (
+        <div className="first_container">
+          <RatingBox
+            selected={selected}
+            setSelected={setSelected}
+            onSubmit={handleSubmit}
+          />
+        </div>
+      )}
+
+      {submitted && (
+        <div className="second_container">
+          <Submited selected={selected} />
+        </div>
+      )}
     </>
   );
 }

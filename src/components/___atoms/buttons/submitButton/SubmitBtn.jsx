@@ -1,7 +1,11 @@
 import "./SubmitBtn.css";
 
-function Submit() {
-  return <button className="submit">SUBMIT</button>;
+function Submit({ onSubmit }) {
+  return (
+    <button type="button" className="submit" onClick={onSubmit}>
+      SUBMIT
+    </button>
+  );
 }
 
 export default Submit;
