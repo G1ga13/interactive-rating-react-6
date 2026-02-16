@@ -1,10 +1,16 @@
 import "./Main.css";
-import RatingBox from "../___molecules/RatingContainer";
+import RatingBox from "../___molecules/RatingContainer/RatingContainer";
+import Submited from "../___molecules/submitedContainer/Submited";
 
 function Main() {
   return (
     <>
-      <RatingBox />
+      <div className="first_container">
+        <RatingBox />
+      </div>
+      <div className="second_container">
+        <Submited />
+      </div>
     </>
   );
 }
