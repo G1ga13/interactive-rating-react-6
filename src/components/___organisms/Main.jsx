@@ -1,5 +1,5 @@
 import "./Main.css";
-import RatingBox from "../___molecules/RatingContainer/RatingContainer";
+import RatingBox from "../___molecules/ratingContainer/RatingContainer.jsx";
 import Submited from "../___molecules/submitedContainer/Submited";
 import { useState } from "react";
 
